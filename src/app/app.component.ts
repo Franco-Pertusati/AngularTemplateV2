@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { DocsComponent } from "./modules/docs/docs.component";
+import { ThemeBtnComponent } from "./modules/shared/theme-btn/theme-btn.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [DocsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Geometrical-Pattern-Generation';
+
 }

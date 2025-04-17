@@ -1,0 +1,9 @@
+<div class="container p24 flex gap24">
+  <app-sidebar [buttonList]="menuList" />
+  <div class="wfull flex">
+    <app-button [label]="'Next'" [style]="'primary'" [icon]="'arrow_back'" />
+    <div class="wfull"></div>
+    <app-button [label]="'previous'" [style]="'primary'" [icon]="'arrow_forward'" />
+  </div>
+  <router-outlet />
+</div>

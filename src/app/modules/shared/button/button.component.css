@@ -1,0 +1,44 @@
+.primary {
+  background-color: var(--font);
+}
+
+.primary * {
+  color: var(--bg1);
+}
+
+.secondary {
+  background-color: var(--primary);
+}
+
+.secondary * {
+  color: whitesmoke;
+}
+
+.terciary {
+  background-color: var(--secondary);
+}
+
+.terciary * {
+  color: whitesmoke;
+}
+
+.ghost {
+  background-color: transparent;
+  border: solid 1px var(--font);
+}
+
+.justIcon {
+  padding: 4px;
+}
+
+.hPrimary:hover * {
+  color: var(--primary);
+}
+
+.wfull {
+  padding: 4px;
+}
+
+span {
+  text-wrap: nowrap;
+}
