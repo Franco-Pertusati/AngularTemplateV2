@@ -1,0 +1,9 @@
+<div class="sidebar hfull bg flex flexCol p12 gap12" [ngClass]="isClosed? 'isClosed' : 'isOpen'">
+  <h2>Docs</h2>
+  <div class="hfull flex gap8 flexCol">
+    @for (button of buttonList; track $index) {
+      <app-button [style]="isRouteActive(button.routerLink)?  'primary wfull' : 'wfull'" [showIcon]="false" [label]="button.label" [showLabel]="!isClosed" [routerLink]="button.routerLink" />
+    }
+  </div>
+  <app-theme-btn />
+</div>

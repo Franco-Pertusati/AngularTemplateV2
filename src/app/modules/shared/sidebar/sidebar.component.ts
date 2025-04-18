@@ -1,7 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { ButtonComponent } from "../../../shared/button/button.component";
+import { ButtonComponent } from "../button/button.component";
 import { CommonModule } from '@angular/common';
-import { ThemeBtnComponent } from "../../../shared/theme-btn/theme-btn.component";
+import { ThemeBtnComponent } from "../theme-btn/theme-btn.component";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -12,35 +13,46 @@ import { ThemeBtnComponent } from "../../../shared/theme-btn/theme-btn.component
 })
 export class SidebarComponent {
   isClosed: boolean = false;
-  selectedBtn: number = 0;
   @Input() buttonList = [
     {
       style: 'wfull',
       icon: 'home',
       label: 'home',
+      routerLink: ''
     },
     {
       style: 'wfull',
       icon: 'person',
       label: 'users',
+      routerLink: ''
     },
     {
       style: 'wfull',
       icon: 'category',
       label: 'categories',
+      routerLink: ''
     },
     {
       style: 'wfull',
       icon: 'settings',
       label: 'settings',
+      routerLink: ''
     },
   ];
 
-  selectBtn(index: number) {
-    this.selectedBtn = index;
-  }
+  constructor(private router: Router) { }
 
-  isSelected(index: number) {
-    return this.selectedBtn === index;
+
+  isRouteActive(route: string | undefined): boolean {
+    if (!route) return false;
+
+    const fullRoute = route.startsWith('/docs') ? route : `/docs${route.startsWith('/') ? route : '/' + route}`;
+
+    return this.router.isActive(fullRoute, {
+      paths: 'subset',
+      matrixParams: 'ignored',
+      queryParams: 'ignored',
+      fragment: 'ignored'
+    });
   }
 }

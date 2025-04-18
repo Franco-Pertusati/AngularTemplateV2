@@ -146,3 +146,7 @@ button * {
 button:hover * {
   color: var(--font);
 }
+
+h3 {
+  font-size: 2rem;
+}

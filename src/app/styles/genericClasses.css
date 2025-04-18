@@ -7,12 +7,16 @@
   margin: 0 auto;
 }
 
-.alignCenter {
+.aligncenter {
   align-items: center;
 }
 
-.justCenter {
+.justcenter {
   justify-content: center;
+}
+
+.justbt {
+  justify-content: space-between;
 }
 
 .flex {
@@ -21,6 +25,10 @@
 
 .flexCol {
   flex-direction: column;
+}
+
+.gap8 {
+  gap: 8px;
 }
 
 .gap12 {

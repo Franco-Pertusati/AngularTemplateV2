@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SidebarComponent } from "../pages/components/sidebar/sidebar.component";
+import { SidebarComponent } from "../shared/sidebar/sidebar.component";
 import { RouterOutlet } from '@angular/router';
 import { ButtonComponent } from "../shared/button/button.component";
 
@@ -22,31 +22,25 @@ export class DocsComponent {
       label: 'form',
       icon: 'password',
       style: 'wfull',
-      routerLink: 'dining-area',
+      routerLink: 'forms',
     },
     {
       label: 'toast',
       icon: 'bolt',
       style: 'wfull',
-      routerLink: 'bolt',
+      routerLink: 'toast',
     },
     {
       label: 'feature card',
       icon: 'group',
       style: 'wfull',
-      routerLink: 'users',
+      routerLink: 'feature-card',
     },
     {
       label: 'sidebar',
       icon: 'dock',
       style: 'wfull',
-      routerLink: 'start-shift'
-    },
-    {
-      label: 'Table list',
-      icon: 'view_list',
-      style: 'wfull',
-      routerLink: 'shift-history'
+      routerLink: 'sidebar'
     },
   ]
 }
