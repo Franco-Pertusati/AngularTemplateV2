@@ -1,6 +1,13 @@
-@if (toastNotification) {
-  <div class="toast flex background" [class.show]="isVisible" [class.hide]="isHiding">
-    <i class="material-icons-round">{{ toastNotification.icon }}</i>
-    <span>{{ toastNotification.message }}</span>
-  </div>
-}
+<div class="toastContainer">
+  @for (toast of toastList(); track $index) {
+    <div class="toast bg p12 flex flexCol gap8">
+      @if (toast.title) {
+      <span class="fstrong">{{ toast.title }}</span>
+      }
+      <div class="flex gap8 aligncenter">
+        <i class="material-icons-round">{{ toast.icon }}</i>
+        <span>{{ toast.message }}</span>
+      </div>
+    </div>
+  }
+</div>

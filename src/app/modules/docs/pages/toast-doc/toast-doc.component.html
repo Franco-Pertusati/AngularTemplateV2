@@ -10,8 +10,8 @@
     You can customize the type of toast you want to render, and pass an options object as the second argument.
   </p>
   <div class="center flex gap12">
-    <app-button [label]="'Default'" [style]="'primary'" [showIcon]="false" />
-    <app-button [label]="'Description'" [style]="'primary'" [showIcon]="false" />
+    <app-button (click)="openDefaultToast()" [label]="'Default'" [style]="'primary'" [showIcon]="false" />
+    <app-button (click)="openDescriptionToast()" [label]="'Description'" [style]="'primary'" [showIcon]="false" />
     <app-button [label]="'Succes'" [style]="'primary'" [showIcon]="false" />
     <app-button [label]="'Info'" [style]="'primary'" [showIcon]="false" />
     <app-button [label]="'Warning'" [style]="'primary'" [showIcon]="false" />

@@ -15,8 +15,8 @@
 }
 
 .ghost {
-  background-color: transparent;
-  box-shadow: 0 0 1px var(--font);
+  background-color: var(--bg1);
+  outline: solid 1px var(--border);
 }
 
 .succes {
@@ -49,10 +49,6 @@
 
 .hPrimary:hover * {
   color: var(--primary);
-}
-
-.wfull {
-  padding: 4px;
 }
 
 span {

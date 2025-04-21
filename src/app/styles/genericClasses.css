@@ -81,3 +81,23 @@
 .relative {
   position: relative;
 }
+
+.fsmall {
+  font-size: 1.2rem;
+}
+
+.fbody {
+  font-size: 1.8rem;
+}
+
+.ftitle {
+  font-size: 2.4rem;
+}
+
+.fstrong {
+  font-weight: bold;
+}
+
+.fnormal {
+  font-weight: normal;
+}

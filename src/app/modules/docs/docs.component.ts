@@ -31,16 +31,28 @@ export class DocsComponent {
       routerLink: 'toast',
     },
     {
+      label: 'sidebar',
+      icon: 'bolt',
+      style: 'wfull',
+      routerLink: 'sidebar',
+    },
+    {
+      label: 'dropdown',
+      icon: 'bolt',
+      style: 'wfull',
+      routerLink: 'dropdown',
+    },
+    {
+      label: 'acordeon',
+      icon: 'bolt',
+      style: 'wfull',
+      routerLink: 'acordeon',
+    },
+    {
       label: 'feature card',
       icon: 'group',
       style: 'wfull',
       routerLink: 'feature-card',
-    },
-    {
-      label: 'sidebar',
-      icon: 'dock',
-      style: 'wfull',
-      routerLink: 'sidebar'
     },
   ]
 }
