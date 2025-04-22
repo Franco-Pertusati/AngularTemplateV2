@@ -1,10 +1,11 @@
 import { Component, computed, Signal } from '@angular/core';
 import { ToastService } from '../../../core/services/toast.service';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-toast',
   standalone: true,
-  imports: [],
+  imports: [NgClass],
   templateUrl: './toast.component.html',
   styleUrl: './toast.component.css'
 })

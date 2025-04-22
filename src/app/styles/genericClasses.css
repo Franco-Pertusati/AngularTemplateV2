@@ -101,3 +101,11 @@
 .fnormal {
   font-weight: normal;
 }
+
+.shadowMd {
+  box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.1),0 2px 4px #0000000d,0 12px 24px #0000000d;
+}
+
+.hide {
+  display: none;
+}

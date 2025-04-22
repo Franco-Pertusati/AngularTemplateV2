@@ -12,12 +12,61 @@ export interface ToastNotification {
 export class ToastService {
   toastList: WritableSignal<ToastNotification[]> = signal([])
 
-  succes(title: string | undefined, message: string) {
+  default(message: string) {
+    const newToast: ToastNotification = {
+      title: undefined,
+      message: message,
+      icon: undefined
+    }
+    this.addToast(newToast)
+  }
+
+  description(title: string, message: string) {
     const newToast: ToastNotification = {
       title: title,
       message: message,
-      icon: 'check',
+      icon: undefined
     }
+    this.addToast(newToast)
+  }
+
+  succes(message: string) {
+    const newToast: ToastNotification = {
+      title: undefined,
+      message: message,
+      icon: 'check_circle'
+    }
+    this.addToast(newToast)
+  }
+
+  info(message: string) {
+    const newToast: ToastNotification = {
+      title: undefined,
+      message: message,
+      icon: 'info'
+    }
+    this.addToast(newToast)
+  }
+
+  warning(message: string) {
+    const newToast: ToastNotification = {
+      title: undefined,
+      message: message,
+      icon: 'warning'
+    }
+    this.addToast(newToast)
+  }
+
+  error(message: string) {
+    const newToast: ToastNotification = {
+      title: undefined,
+      message: message,
+      icon: 'error'
+    }
+    this.addToast(newToast)
+  }
+
+  addToast(newToast: ToastNotification) {
     this.toastList().push(newToast)
     console.log(this.toastList())
     setTimeout(() => {

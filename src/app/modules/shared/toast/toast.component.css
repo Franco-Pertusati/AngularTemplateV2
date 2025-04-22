@@ -1,26 +1,30 @@
 .toastContainer {
-  max-height: 198px;
-  padding-bottom: 24px;
-  position: absolute;
-  bottom: 24px;
-  right: 24px;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  background: linear-gradient(0deg,rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
-  overflow-y: hidden;
+  position: relative;
 }
 
 .toast {
-  position: relative;
   min-width: 420px;
-  transform: translateY(20px);
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
-.toast.show {
-  opacity: 1;
-  transform: translateY(0);
+.noShadow {
+  box-shadow: none;
+}
+
+.toastContainer:hover .toast {
+  position: relative;
+}
+
+.toastContainer:hover {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.toastContainer:hover .toast {
+  box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.1),0 2px 4px #0000000d,0 12px 24px #0000000d;
 }
 
 i {
@@ -34,11 +38,4 @@ i {
 
 .toast:hover i {
   transform: scale(1.1);
-}
-
-/* Animación de salida */
-.toast.hide {
-  opacity: 0;
-  transform: translateY(20px) scale(0.9);
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
