@@ -13,6 +13,9 @@ import { Router } from '@angular/router';
 })
 export class SidebarComponent {
   isClosed: boolean = false;
+  @Input() toggleBtn: boolean = true;
+  @Input() title: string = 'Title'
+  @Input() shortTitle: string = 'Ti'
   @Input() buttonList = [
     {
       style: 'wfull',

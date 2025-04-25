@@ -1,5 +1,5 @@
 <button [routerLink]="routerLink" [ngClass]="[style, !showLabel? 'justIcon' : '']">
-  @if (showIcon) {
+  @if (showIcon && icon) {
   <i class="material-icons-round">{{ icon }}</i>
   }
   @if (showLabel && label) {
