@@ -109,3 +109,7 @@
 .hide {
   display: none;
 }
+
+.flexWrap {
+  flex-wrap: wrap;
+}

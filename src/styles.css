@@ -133,17 +133,9 @@ button {
   align-items: center;
   gap: 8px;
   padding: 4px 8px;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   transition: padding ease .3s;
-}
-
-button * {
-  color: var(--font3);
-}
-
-button:hover * {
-  color: var(--font);
 }
 
 h3 {
