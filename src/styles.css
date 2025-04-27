@@ -127,6 +127,7 @@ select:focus {
 }
 
 button {
+  min-height: 35px;
   background-color: transparent;
   border-style: none;
   display: flex;

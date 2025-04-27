@@ -13,9 +13,9 @@ import { Router } from '@angular/router';
 })
 export class SidebarComponent {
   isClosed: boolean = false;
+  @Input() rooteRoute: string = ''
   @Input() toggleBtn: boolean = true;
   @Input() title: string = 'Title'
-  @Input() shortTitle: string = 'Ti'
   @Input() buttonList = [
     {
       style: 'wfull',
@@ -49,7 +49,7 @@ export class SidebarComponent {
   isRouteActive(route: string | undefined): boolean {
     if (!route) return false;
 
-    const fullRoute = route.startsWith('/docs') ? route : `/docs${route.startsWith('/') ? route : '/' + route}`;
+    const fullRoute = route.startsWith(this.rooteRoute) ? route : `/${this.rooteRoute}${route.startsWith('/') ? route : '/' + route}`;
 
     return this.router.isActive(fullRoute, {
       paths: 'subset',
