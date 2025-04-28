@@ -1,19 +1,28 @@
 <div class="flex gap24 hfull">
-  <div class="flex flexCol hfull wfull gap12">
-    <div class="flex ali justbt aligncenter">
-      <h2>Incomplete</h2>
-      <app-button [label]="'add To Do'" [icon]="'add'" [style]="'primary'" />
+  <div class="flex flexCol hfull wfull gap24">
+    <h2>To Do</h2>
+    <div class="flex flexCol gap12">
+      <app-to-do-card [title]="'Comprar leche'" [complete]="false" [deadLine]="1714320000"></app-to-do-card>
+      <app-to-do-card [title]="'Comprar leche'" [complete]="false" [deadLine]="1714320000"></app-to-do-card>
+      <app-to-do-card [title]="'Comprar leche'" [complete]="false" [deadLine]="1714320000"></app-to-do-card>
+      <app-to-do-card [title]="'Comprar leche'" [complete]="false" [deadLine]="1714320000"></app-to-do-card>
     </div>
-    <div class="bg flex aligncenter gap12 p12 wfull">
-      <app-button [icon]="'check_box_outline_blank'" [label]="''" />
-      <span class="wfull">Lista a realizar</span>
-      <app-button [icon]="'more_vert'" [label]="''" />
+    <div class="flex">
+      <div class="wfull"></div>
+      <app-button [label]="'Add To Do'" [icon]="'add'" [style]="'primary'" />
     </div>
   </div>
-  <div class="flex flexCol wfull gap12">
-    <div class="flex justbt aligncenter">
-      <h2>Complete</h2>
-      <app-button [label]="'clear list'" [icon]="'clear'" [style]="'primary'" />
+  <div class="flex flexCol wfull gap24">
+    <h2>Complete</h2>
+    <div class="flex flexCol gap12">
+      <app-to-do-card [title]="'Comprar leche'" [complete]="true" [deadLine]="1714320000"></app-to-do-card>
+      <app-to-do-card [title]="'Comprar leche'" [complete]="true" [deadLine]="1714320000"></app-to-do-card>
+      <app-to-do-card [title]="'Comprar leche'" [complete]="true" [deadLine]="1714320000"></app-to-do-card>
+      <app-to-do-card [title]="'Comprar leche'" [complete]="true" [deadLine]="1714320000"></app-to-do-card>
+    </div>
+    <div class="flex">
+      <div class="wfull"></div>
+      <app-button [label]="'Clear list'" [icon]="'close'" />
     </div>
   </div>
 </div>
