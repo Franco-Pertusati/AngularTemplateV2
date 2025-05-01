@@ -1,12 +1,12 @@
 <div class="sidebar hfull bg flex flexCol p12 gap12" [ngClass]="isClosed? 'isClosed' : 'isOpen'">
-  <div class="flex gap12">
+  <div class="flex aligncenter gap12">
     @if (toggleBtn) {
     <div style="height: 45px;">
       <app-button [icon]="'menu'" [showLabel]="false" (click)="isClosed = !isClosed" />
     </div>
     }
     @if (!isClosed) {
-    <h2 class="center">{{ title }}</h2>
+    <h2>{{ title }}</h2>
     }
   </div>
   <div class="hfull flex gap8 flexCol">

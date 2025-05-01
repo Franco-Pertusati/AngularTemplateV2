@@ -58,6 +58,18 @@
   box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.1),0 2px 4px #0000000d,0 12px 24px #0000000d;
 }
 
+.bg1 {
+  background-color: var(--bg1);
+}
+
+.bg2 {
+  background-color: var(--bg2);
+}
+
+.bg3 {
+  background-color: var(--bg3);
+}
+
 .dark .bg {
   box-shadow: none;
   border: solid 1px var(--border);
@@ -123,4 +135,12 @@
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.lgw {
+  max-width: 1024px;
 }

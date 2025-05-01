@@ -2,27 +2,25 @@
   <div class="flex flexCol hfull wfull gap24">
     <h2>To Do</h2>
     <div class="flex flexCol gap12">
-      <app-to-do-card [title]="'Comprar leche'" [complete]="false" [deadLine]="1714320000"></app-to-do-card>
-      <app-to-do-card [title]="'Comprar leche'" [complete]="false" [deadLine]="1714320000"></app-to-do-card>
-      <app-to-do-card [title]="'Comprar leche'" [complete]="false" [deadLine]="1714320000"></app-to-do-card>
-      <app-to-do-card [title]="'Comprar leche'" [complete]="false" [deadLine]="1714320000"></app-to-do-card>
+      @for (todo of todos; track $index) {
+      @if (!todo.complete) {
+      <app-to-do-card (completeChange)="changeTodoState($event, todo.id)" [title]="todo.title" [complete]="todo.complete" [deadLine]="todo.deadLine"></app-to-do-card>
+      }
+      }
     </div>
     <div class="flex">
       <div class="wfull"></div>
       <app-button [label]="'Add To Do'" [icon]="'add'" [style]="'primary'" />
     </div>
   </div>
-  <div class="flex flexCol wfull gap24">
+  <div class="flex flexCol hfull wfull gap24">
     <h2>Complete</h2>
     <div class="flex flexCol gap12">
-      <app-to-do-card [title]="'Comprar leche'" [complete]="true" [deadLine]="1714320000"></app-to-do-card>
-      <app-to-do-card [title]="'Comprar leche'" [complete]="true" [deadLine]="1714320000"></app-to-do-card>
-      <app-to-do-card [title]="'Comprar leche'" [complete]="true" [deadLine]="1714320000"></app-to-do-card>
-      <app-to-do-card [title]="'Comprar leche'" [complete]="true" [deadLine]="1714320000"></app-to-do-card>
-    </div>
-    <div class="flex">
-      <div class="wfull"></div>
-      <app-button [label]="'Clear list'" [icon]="'close'" />
+      @for (todo of todos; track $index) {
+        @if (todo.complete) {
+        <app-to-do-card (completeChange)="changeTodoState($event, todo.id)" [title]="todo.title" [complete]="todo.complete" [deadLine]="todo.deadLine"></app-to-do-card>
+        }
+        }
     </div>
   </div>
 </div>

@@ -15,26 +15,15 @@ export class ToDoCardComponent {
   @Input() deadLine: number | null = null;
   @Output() completeChange = new EventEmitter<boolean>();
   @Output() delete = new EventEmitter<void>();
-  @Output() edit = new EventEmitter<void>();
 
   showMenu: boolean = false;
 
   toggleComplete() {
-    this.complete = !this.complete;
     this.completeChange.emit(this.complete);
   }
 
   onDelete() {
     this.delete.emit();
-  }
-
-  onEdit() {
-    this.edit.emit();
-  }
-
-  toggleMenu(event: Event) {
-    event.stopPropagation();
-    this.showMenu = !this.showMenu;
   }
 
   formatDeadline(): string {
