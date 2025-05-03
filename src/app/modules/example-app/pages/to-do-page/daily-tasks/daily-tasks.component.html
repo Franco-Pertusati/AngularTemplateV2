@@ -2,10 +2,16 @@
   <div class="flex flexCol hfull wfull gap24">
     <h2>To Do</h2>
     <div class="flex flexCol gap12">
-      @for (todo of todos; track $index) {
+      @if (hasIncompleteTodos()) {
+      @for (todo of todos; track todo.id) {
       @if (!todo.complete) {
-      <app-to-do-card (completeChange)="changeTodoState($event, todo.id)" [title]="todo.title" [complete]="todo.complete" [deadLine]="todo.deadLine"></app-to-do-card>
+      <app-to-do-card (completeChange)="changeTodoState($event, todo.id)" [title]="todo.title"
+        [complete]="todo.complete" [deadLine]="todo.deadLine">
+      </app-to-do-card>
       }
+      }
+      } @else {
+      <span class="p12">Everything ready for today.</span>
       }
     </div>
     <div class="flex">
@@ -15,12 +21,18 @@
   </div>
   <div class="flex flexCol hfull wfull gap24">
     <h2>Complete</h2>
-    <div class="flex flexCol gap12">
-      @for (todo of todos; track $index) {
-        @if (todo.complete) {
-        <app-to-do-card (completeChange)="changeTodoState($event, todo.id)" [title]="todo.title" [complete]="todo.complete" [deadLine]="todo.deadLine"></app-to-do-card>
-        }
-        }
+    <div class="flex flexCol gap12 hfull">
+      @if (hasCompleteTodos()) {
+      @for (todo of todos; track todo.id) {
+      @if (todo.complete) {
+      <app-to-do-card (completeChange)="changeTodoState($event, todo.id)" [title]="todo.title"
+        [complete]="todo.complete" [deadLine]="todo.deadLine">
+      </app-to-do-card>
+      }
+      }
+      } @else {
+      <span class="p12">Completed tasks will be displayed here.</span>
+      }
     </div>
   </div>
 </div>

@@ -30,10 +30,18 @@ export class DailyTasksComponent {
   ]
 
   changeTodoState(event: boolean, id: number) {
-    const todoToUpdate = this.todos.find(t => t.id === id)
-
+    const todoToUpdate = this.todos.find(todo => todo.id === id);
     if (todoToUpdate) {
-      todoToUpdate.complete = event
+      todoToUpdate.complete = !event;
+      console.log(this.todos);
     }
+  }
+
+  hasIncompleteTodos(): boolean {
+    return this.todos.some(todo => !todo.complete);
+  }
+
+  hasCompleteTodos(): boolean {
+    return this.todos.some(todo => todo.complete);
   }
 }
