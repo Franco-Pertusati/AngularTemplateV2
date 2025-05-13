@@ -7,6 +7,7 @@ import { FeatureCardDocComponent } from "./pages/feature-card-doc/feature-card-d
 import { SidebarDocComponent } from "./pages/sidebar-doc/sidebar-doc.component";
 import { DropDownDocComponent } from "./pages/drop-down-doc/drop-down-doc.component";
 import { AcordeonDocComponent } from "./pages/acordeon-doc/acordeon-doc.component";
+import { NavPageComponent } from "./pages/nav-page/nav-page.component";
 
 export const docsRoutes: Routes = [
   {
@@ -14,6 +15,7 @@ export const docsRoutes: Routes = [
     component: DocsComponent,
     children: [
       { path: 'buttons', component: ButtonsComponent },
+      { path: 'nav', component: NavPageComponent },
       { path: 'forms', component: FormsComponent },
       { path: 'toast', component: ToastDocComponent },
       { path: 'sidebar',  component: SidebarDocComponent},

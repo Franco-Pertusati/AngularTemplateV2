@@ -25,6 +25,12 @@ export class DocsComponent {
       routerLink: 'forms',
     },
     {
+      label: 'navbar',
+      icon: '',
+      style: 'wfull',
+      routerLink: 'nav',
+    },
+    {
       label: 'toast',
       icon: '',
       style: 'wfull',

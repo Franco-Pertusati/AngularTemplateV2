@@ -3,6 +3,11 @@
   width: 100vw;
 }
 
+.scrollContainer {
+  overflow-y: auto;
+  height: 100%;
+}
+
 .center {
   margin: 0 auto;
 }
@@ -58,6 +63,14 @@
   box-shadow: rgba(3, 7, 18, 0.08) 0px 0px 0px 1px, rgba(3, 7, 18, 0.08) 0px 1px 2px -1px, rgba(3, 7, 18, 0.1) 0px 2px 8px 0px;
 }
 
+.bgGlass {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: rgba(3, 7, 18, 0.08) 0px 0px 0px 1px, rgba(3, 7, 18, 0.08) 0px 1px 2px -1px, rgba(3, 7, 18, 0.1) 0px 2px 8px 0px;
+}
+
 .bgReverse {
   background-color: var(--bg1);
   border-radius: 12px;
@@ -78,7 +91,7 @@
 
 .dark .bg {
   box-shadow: none;
-  border: solid 1px var(--border);
+  box-shadow: rgba(100, 100, 100, 0.1) 0px 0px 0px 1px, rgba(2, 4, 10, 0.2) 0px 1px 2px -1px, rgba(2, 4, 10, 0.2) 0px 2px 8px 0px;
 }
 
 .hfit {
@@ -123,10 +136,6 @@
 
 .fnormal {
   font-weight: normal;
-}
-
-.shadowMd {
-  box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 2px 4px #0000000d, 0 12px 24px #0000000d;
 }
 
 .hide {
