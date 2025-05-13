@@ -44,7 +44,9 @@
 }
 
 .justIcon {
-  padding: 4px;
+  width: 34px;
+  height: 34px;
+  justify-content: center;
 }
 
 .hPrimary:hover * {
@@ -56,5 +58,5 @@ span {
 }
 
 .rounded {
-  border-radius: 46px;
+  border-radius: 8px;
 }
