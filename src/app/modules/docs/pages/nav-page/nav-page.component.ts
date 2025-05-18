@@ -8,6 +8,4 @@ import { NavBarComponent } from "../../../shared/nav-bar/nav-bar.component";
   templateUrl: './nav-page.component.html',
   styleUrl: './nav-page.component.css'
 })
-export class NavPageComponent {
-
-}
+export class NavPageComponent {}

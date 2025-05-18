@@ -1,12 +1,14 @@
 <div class="navContainer">
-  <nav class="bgGlass flex aligncenter gap12">
+  <nav class="flex aligncenter" [ngClass]="isScrolled? 'gap12 bgGlass' : 'scrolled'">
     <span class="appTitle">Page Name</span>
-    <div class="flex gap12" style="padding: 0 32px;">
+    <div class="flex gap12">
       <app-button [label]="'Contact'" [icon]="''" [style]="'ghost'" />
       <app-button [label]="'Projects'" [icon]="''" [style]="'ghost'" />
       <app-button [label]="'About Me'" [icon]="''" [style]="'ghost'" />
     </div>
-    <app-button [label]="'Download CV'" [icon]="'download'" [style]="'primary'" />
-    <app-button [style]="'ghost'" [showLabel]="false" [icon]="'light_mode'" />
+    <div class="flex gap12">
+      <app-button [label]="'Download CV'" [icon]="'download'" [style]="'accent'" />
+      <app-button [style]="'ghost'" [showLabel]="false" [icon]="'light_mode'" />
+    </div>
   </nav>
 </div>
