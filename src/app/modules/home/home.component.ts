@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { ThemeBtnComponent } from "../shared/theme-btn/theme-btn.component";
+import { ButtonComponent } from "../shared/button/button.component";
+import { DropdownComponent } from "../shared/dropdown/dropdown.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ThemeBtnComponent],
+  imports: [ButtonComponent, DropdownComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

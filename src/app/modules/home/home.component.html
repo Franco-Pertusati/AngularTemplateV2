@@ -1,34 +1,81 @@
-<div class="container p24 bg2">
-  <div class="flex flexCol hfull gap24 lgw center">
-    <div class="wfit center">
-      <h1 class="textCenter">
-        Franco's components library
-      </h1>
-      <p>
-        Un pequeño rejunte de componentes para empezar proyectos mas rapido
-      </p>
-    </div>
-    <div class="hfit flex gap24">
-      <div class="bg wfull p24 flex flexCol gap12">
-        <h2 class="textCenter">Documentation</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id excepturi quod voluptatum, ipsam commodi, ipsa
-          aspernatur obcaecati sint explicabo veritatis blanditiis tempore quisquam. Repellat, distinctio quidem
-          doloribus mollitia reprehenderit rerum?
-        </p>
-      </div>
-      <div class="bg wfull p24 flex flexCol gap12">
-        <h2 class="textCenter">Example app</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, omnis provident voluptatem, sunt atque
-          deserunt veritatis architecto eos tempora repellendus recusandae laboriosam quasi consectetur magnam
-          voluptatum cum quisquam in possimus!
-        </p>
+<div class="widthLayout center flex flexCol">
+  <section>
+    <div class="hero wfull relative">
+      <div class="flex flexCol gap24">
+        <div>
+          <span>Angular</span>
+          <h1 class="rainbowTxt">UI Library</h1>
+        </div>
+        <p>Components and a template to start projects more faster</p>
+        <div class="flex gap12 center">
+          <app-button [label]="'get started'" [icon]="'arrow_forward'" [style]="'accent'" />
+          <app-button [label]="'docs'" [icon]="'arrow_forward'" [style]="'ghost'" />
+        </div>
       </div>
     </div>
-    <div>
-      <h2>Aditional Tools</h2>
+  </section>
+
+  <section class="flex flexCol gap12">
+    <div class="explainCard flex flexCol gap24 p24 bg cardShadow">
+      <h3>New components</h3>
+      <span>Componentes reutilizables y costumizables para angular las versiones de angular 18 en adelante</span>
+      <a href="">
+        Try it
+      </a>
     </div>
-    <app-theme-btn />
-  </div>
+    <div class="explainCard flex flexCol gap24 p24 bg cardShadow">
+      <h3>Project template</h3>
+      <span>Componentes reutilizables y costumizables para angular las versiones de angular 18 en adelante</span>
+      <a href="">
+        Try it
+      </a>
+    </div>
+  </section>
+
+  <section class="flex flexCol gap24">
+    <h2 class="textCenter">Components</h2>
+    <div class="bgBorder p24 flex flexCol gap24">
+      <h3>Dropdown</h3>
+      <div class="center">
+        <div class="bg p12">
+          <app-dropdown [style]="'rounded'">
+            <app-button [label]="'Option 1'" [icon]="'favorite'" />
+            <app-button [label]="'Option 2'" [icon]="'cake'" />
+            <app-button [label]="'Option 3'" [icon]="'flag'" />
+          </app-dropdown>
+        </div>
+      </div>
+      <a href="">Docs</a>
+    </div>
+    <div class="bgBorder p24 flex flexCol gap24">
+      <h3>Copy text button</h3>
+      <div class="bg p12 aligncenter center flex gap12">
+        <span>Content to copy</span>
+        <button class="primary justIcon">
+          <i class="material-icons-round">copy</i>
+        </button>
+      </div>
+      <a href="">Docs</a>
+    </div>
+    <div class="bgBorder p24 flex flexCol gap24">
+      <h3>Toast</h3>
+      <div class="aligncenter center gap12 flex flexWrap justcenter">
+        <app-button [label]="'Default'" [style]="'primary'" [showIcon]="false" />
+        <app-button [label]="'Description'" [style]="'primary'" [showIcon]="false" />
+        <app-button [label]="'Succes'" [style]="'primary'" [showIcon]="false" />
+        <app-button [label]="'Warning'" [style]="'primary'" [showIcon]="false" />
+        <app-button [label]="'Error'" [style]="'primary'" [showIcon]="false" />
+      </div>
+      <a href="">Docs</a>
+    </div>
+    <div class="bgBorder p24 flex flexCol gap24">
+      <h3>Buttons</h3>
+      <div class="p12 aligncenter center flex flexWrap gap12">
+        <app-button [label]="'Error'" [style]="'accent'" [showIcon]="false" />
+        <app-button [label]="'Error'" [style]="'primary'" [showIcon]="false" />
+        <app-button [label]="'Error'" [style]="'ghost'" [showIcon]="false" />
+      </div>
+      <a href="">Docs</a>
+    </div>
+  </section>
 </div>

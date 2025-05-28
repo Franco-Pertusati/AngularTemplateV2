@@ -2,9 +2,10 @@
   position: relative;
 }
 
-.win {
+.bg1 {
+  margin: 0 auto;
   position: absolute;
-  left: calc(50% - 110px);
   z-index: 50;
   gap: 4px;
+  border-radius: 12px;
 }

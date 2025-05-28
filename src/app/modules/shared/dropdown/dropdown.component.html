@@ -1,4 +1,4 @@
-<div class="dropDownContainer" [ngClass]="style" (mouseenter)="openDropdown()" (mouseleave)="closeDropdown()">
+<div class="dropDownContainer wfit" [ngClass]="style" (mouseenter)="openDropdown()" (mouseleave)="closeDropdown()">
   <button>
     @if (showIcon) {
     <i class="material-icons-round">{{ icon }}</i>
@@ -11,7 +11,7 @@
 
   @if (isOpen) {
   <div class="ddCont">
-    <div class="win border shadow">
+    <div class="bg1 bgBorder flex flexCol gap12 p12">
       <ng-content />
     </div>
   </div>

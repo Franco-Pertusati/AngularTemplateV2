@@ -1,0 +1,41 @@
+.hero {
+  margin-top: 72px;
+  height: fit-content;
+  display: grid;
+  place-items: center;
+}
+
+.hero * {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+.hero p {
+  color: var(--font2);
+
+}
+
+section {
+  margin: 32px 0;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+.explainCard p {
+  color: var(--font3);
+}
+
+a {
+  margin-left: auto;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--primary);
+}
