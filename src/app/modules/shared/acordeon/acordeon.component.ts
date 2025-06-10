@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-acordeon',
@@ -14,10 +14,9 @@ export class AcordeonComponent {
   @Input() icon: string = 'check'
   @Input() showIcon: boolean = true;
   @Input() style: string = '';
-
   isOpen: boolean = false;
 
-  toggleState() {
+  toggle() {
     this.isOpen = !this.isOpen
   }
 }

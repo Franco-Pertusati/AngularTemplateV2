@@ -8,10 +8,10 @@
   </div>
   }
 
-  <div [ngClass]="[isNavbarClosed? '' : 'showNav', mobileNav? 'mobileNav bgGlass' : 'desktopNav']"
+  <div [ngClass]="[isNavbarClosed? '' : 'showNav', mobileNav? 'mobileNav bgGlass' : 'desktopNav', 'scrolledContainer bgGlass']"
     (click)="closeMobileNav()">
     <nav class="p8 flex gap8 flexCol"
-      [ngClass]="[mobileNav? 'bg cardShadow' : '', isScrolled && !mobileNav? 'scrolled bgGlass' : '']"
+      [ngClass]="[mobileNav? 'bg cardShadow' : '', isScrolled && !mobileNav? 'scrolled' : '']"
       (click)="$event.stopPropagation()">
       <div class="flex gap12 justbt" [ngClass]="[mobileNav ? 'wfull' : 'wfit']">
         <label for="">

@@ -39,3 +39,44 @@ a {
   text-decoration: underline;
   color: var(--primary);
 }
+
+.h1Container {
+  padding: 12px 24px;
+  border-radius: 99px;
+  width: fit-content;
+}
+
+.compCard,
+.explainCard {
+  max-width: 420px;
+  justify-content: space-between;
+}
+
+.componentLists {
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 12px;
+}
+
+@media (min-width: 412px) {
+  .explainCardList {
+    gap: 24px;
+  }
+
+  .componentLists {
+    gap: 24px;
+  }
+
+  .componentLists .bgBorder {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 912px) {
+  .componentLists {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}

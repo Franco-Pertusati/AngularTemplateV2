@@ -41,10 +41,12 @@ hr {
 }
 
 .desktopNav {
+  padding: 6px 0;
   width: 100vw;
-  left: 0;
   position: fixed;
-  top: 12px;
+  left: 0;
+  top: 0;
+  transition: all ease .3s;
 }
 
 .desktopNav nav {
@@ -63,8 +65,14 @@ hr {
 }
 
 .desktopNav .scrolled {
-  gap: 8px;
-  width: 530px;
+  background-color: transparent;
+  backdrop-filter: none;
+  border-style: none;
+}
+
+.scrolledContainer {
+  border-radius: 0;
+  border-style: none;
 }
 
 /* Animación con efecto rebote */

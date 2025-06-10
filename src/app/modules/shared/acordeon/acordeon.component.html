@@ -1,5 +1,5 @@
-<div class="dropDownContainer wfull" [ngClass]="[style]">
-  <button class="wfull" (click)="toggleState()" >
+<div class="dropDownContainer bg cardShadow wfull" [ngClass]="[style]">
+  <button class="wfull" (click)="toggle()">
     @if (showIcon) {
     <i class="material-icons-round">{{ icon }}</i>
     }
@@ -7,14 +7,12 @@
     <span>{{ label }}</span>
     }
     @if (showLabel) {
-      <div class="wfull"></div>
+    <div class="wfull"></div>
     <i class="material-icons-round" [ngClass]="isOpen? 'deg90' : ''">keyboard_arrow_left</i>
     }
   </button>
 
-  @if (isOpen) {
-  <div class="ddCont" [ngClass]="isOpen? 'justIcon' : ''">
+  <div class="contentContainer" [ngClass]="isOpen? 'showCont' : 'hideCont'">
     <ng-content />
   </div>
-  }
 </div>

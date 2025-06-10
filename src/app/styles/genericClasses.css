@@ -182,9 +182,9 @@
 }
 
 .pageContainer {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
+  padding-top: 64px;
+  height: 100%;
+  overflow-y: auto;
 }
 
 .textCenter {
@@ -192,7 +192,7 @@
 }
 
 .rainbowTxt {
-  background: linear-gradient(to right, var(--primary), var(--secondary));
+  background: linear-gradient(to right, var(--secondary), var(--primary));
   background-clip: text;
   color: transparent;
 }

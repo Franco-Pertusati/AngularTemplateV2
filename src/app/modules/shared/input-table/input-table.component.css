@@ -1,0 +1,14 @@
+.tableContainer {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 680px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.cell {
+  padding: 12px;
+  background-color: var(--bg3);
+  border: solid 1px var(--bg1);
+  text-wrap: nowrap;
+}

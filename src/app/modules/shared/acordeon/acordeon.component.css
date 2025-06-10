@@ -1,35 +1,37 @@
-/* Animaciones para el dropdown */
 .dropDownContainer {
   position: relative;
+  transform: all ease .3s;
+  overflow: hidden;
 }
 
-.ddCont {
-  padding: 8px 12px;
-  overflow: hidden;
-  animation: slideDown 0.3s ease-out forwards;
-  transform-origin: top center;
+.showCont {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  padding: 12px;
+  padding-top: 0;
+  width: 100%;
+  animation: slideDown .3s ease-out forwards;
+  /* transform-origin: top center; */
+  height: fit-content;
 }
 
-.justIcon {
-  width: 34px;
-  height: 34px;
-  padding: 0;
+.hideCont {
+  height: 0;
+  animation: slideUp .3s ease-out forwards;
+  padding: 0px 12px;
 }
 
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-    max-height: 0;
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-    max-height: 500px;
-  }
+.contentContainer {
+  transition: all ease .3s;
+}
+
+button {
+  height: 56px;
+  gap: 12px;
+}
+
+span {
+  font-weight: bold;
 }
 
 /* Animación para el ícono de flecha */
@@ -41,17 +43,24 @@
   transform: rotate(-90deg);
 }
 
-@keyframes slideUp {
+@keyframes slideDown {
   from {
-    opacity: 1;
-    transform: translateY(0);
-    max-height: 500px;
+    height: 0;
+    opacity: 0;
   }
   to {
+    height: 120px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    height: 120px;
+    opacity: 1;
+  }
+  to {
+    height: 0;
     opacity: 0;
-    transform: translateY(-10px);
-    max-height: 0;
-    padding-top: 0;
-    padding-bottom: 0;
   }
 }

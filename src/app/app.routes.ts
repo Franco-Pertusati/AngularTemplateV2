@@ -7,10 +7,6 @@ export const routes: Routes = [
     loadChildren: () => import('./modules/docs/docs.routes').then(m => m.docsRoutes)
   },
   {
-    path: 'example-app',
-    loadChildren: () => import('./modules/example-app/example-app.routes').then(m => m.exampleAppRoute)
-  },
-  {
     path: '',
     component: HomeComponent
   }

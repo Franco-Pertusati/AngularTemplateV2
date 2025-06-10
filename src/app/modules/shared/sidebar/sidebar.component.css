@@ -1,5 +1,5 @@
 .isOpen {
-  width: 264px;
+  width: 256px;
 }
 
 .isClosed {
@@ -9,5 +9,6 @@
 .sidebar {
   transition: width ease .3s;
   overflow-x: hidden;
+  border-right: 1px solid var(--bg2);
 }
 

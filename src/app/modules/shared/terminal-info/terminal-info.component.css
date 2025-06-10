@@ -1,0 +1,16 @@
+.terminalContainer {
+  overflow: hidden;
+  border-radius: 18px;
+  border: solid 2px var(--bg3);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.terminalTitle {
+  padding: 8px;
+  background-color: var(--bg3);
+}
+
+.content {
+  min-height: 120px;
+}

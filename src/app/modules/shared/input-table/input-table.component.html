@@ -1,0 +1,11 @@
+<div class="tableContainer flex">
+  @for (table of tableData.table; track $index) {
+    <div class="col wfull flex flexCol">
+      @for (cell of table.cells; track $index) {
+        <div class="cell">
+          <span>{{ cell }}</span>
+        </div>
+      }
+    </div>
+  }
+</div>
