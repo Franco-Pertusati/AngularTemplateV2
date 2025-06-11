@@ -58,4 +58,10 @@ export class SidebarComponent {
     if (this.router.url.includes(route)) return true;
     else return false
   }
+
+
+  navigateTo(route: string) {
+    if (!route) return
+    this.router.navigateByUrl(`docs/${route}`)
+  }
 }

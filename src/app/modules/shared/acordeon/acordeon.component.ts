@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, ViewChild } from '@angular/core';
+import { Component, EventEmitter, Input, Output, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-acordeon',
@@ -14,9 +14,12 @@ export class AcordeonComponent {
   @Input() icon: string = 'check'
   @Input() showIcon: boolean = true;
   @Input() style: string = '';
-  isOpen: boolean = false;
+  @Input() contentHeight: number = 120;
+  @Input() isOpen: boolean = false;
+  @Output() toggleAccordion = new EventEmitter<void>();
 
   toggle() {
     this.isOpen = !this.isOpen
+    this.toggleAccordion.emit();
   }
 }

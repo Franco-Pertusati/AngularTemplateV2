@@ -15,7 +15,7 @@
       <h3>{{ group.name }}</h3>
       <div class="flex flexCol gap8">
         @for (button of group.buttons; track $index) {
-        <app-button [icon]="button.icon" [label]="button.label" [style]="isRouteActive(button.route)? 'bg3 wfull' : 'wfull'" />
+        <app-button [icon]="button.icon" [label]="button.label" [style]="isRouteActive(button.route)? 'bg3 wfull' : 'wfull'" (click)="navigateTo(button.route)" />
         }
       </div>
     </div>

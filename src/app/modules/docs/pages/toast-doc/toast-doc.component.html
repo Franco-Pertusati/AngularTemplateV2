@@ -1,20 +1,27 @@
-<div class="wfull hfull flex flexCol gap12">
-  <span>Docs > Toast</span>
-  <h2>Toast</h2>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit officiis praesentium facilis odit atque
-    consequatur dolorem totam magnam quisquam aliquid ipsam nobis voluptatem, deserunt a sint quae qui quasi vitae.
-  </p>
-  <h2>Types</h2>
-  <p>
-    You can customize the type of toast you want to render, and pass an options object as the second argument.
-  </p>
-  <div class="center flex gap12">
-    <app-button (click)="openDefaultToast()" [label]="'Default'" [style]="'primary'" [showIcon]="false" />
-    <app-button (click)="openDescriptionToast()" [label]="'Description'" [style]="'primary'" [showIcon]="false" />
-    <app-button (click)="openSuccesToast()" [label]="'Succes'" [style]="'primary'" [showIcon]="false" />
-    <app-button (click)="openInfoToast()" [label]="'Info'" [style]="'primary'" [showIcon]="false" />
-    <app-button (click)="openWarningToast()" [label]="'Warning'" [style]="'primary'" [showIcon]="false" />
-    <app-button (click)="openErrorToast()" [label]="'Error'" [style]="'primary'" [showIcon]="false" />
-  </div>
+<div class="docPageContainer hfull wfull">
+  <section>
+    <h2>Toast</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit officiis praesentium facilis odit atque
+      consequatur dolorem totam magnam quisquam aliquid ipsam nobis voluptatem, deserunt a sint quae qui quasi vitae.
+    </p>
+    <div class="componentPreview center">
+      <div class="center flex gap12">
+        <app-button (click)="openDefaultToast()" [label]="'Default'" [style]="'primary'" [showIcon]="false" />
+        <app-button (click)="openDescriptionToast()" [label]="'Description'" [style]="'primary'" [showIcon]="false" />
+        <app-button (click)="openSuccesToast()" [label]="'Succes'" [style]="'primary'" [showIcon]="false" />
+        <app-button (click)="openInfoToast()" [label]="'Info'" [style]="'primary'" [showIcon]="false" />
+        <app-button (click)="openWarningToast()" [label]="'Warning'" [style]="'primary'" [showIcon]="false" />
+        <app-button (click)="openErrorToast()" [label]="'Error'" [style]="'primary'" [showIcon]="false" />
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>Inputs</h2>
+    <app-input-table />
+  </section>
+  <section>
+    <h2>Usage</h2>
+    <app-terminal-info />
+  </section>
 </div>

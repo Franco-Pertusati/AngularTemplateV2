@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { ButtonComponent } from "../../../shared/button/button.component";
 import { ToastService } from '../../../../core/services/toast.service';
+import { InputTableComponent } from "../../../shared/input-table/input-table.component";
+import { TerminalInfoComponent } from "../../../shared/terminal-info/terminal-info.component";
 
 @Component({
   selector: 'app-toast-doc',
   standalone: true,
-  imports: [ButtonComponent],
+  imports: [ButtonComponent, InputTableComponent, TerminalInfoComponent],
   templateUrl: './toast-doc.component.html',
   styleUrl: './toast-doc.component.css'
 })

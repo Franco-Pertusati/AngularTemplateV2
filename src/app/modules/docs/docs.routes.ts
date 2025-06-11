@@ -1,6 +1,7 @@
 import { Routes } from "@angular/router";
 import { DocsComponent } from "./docs.component";
 import { AcordeonDocComponent } from "./pages/acordeon-doc/acordeon-doc.component";
+import { ToastDocComponent } from "./pages/toast-doc/toast-doc.component";
 
 export const docsRoutes: Routes = [
   {
@@ -8,9 +9,9 @@ export const docsRoutes: Routes = [
     component: DocsComponent,
     children: [
       { path: 'accordion-group', component: AcordeonDocComponent },
+      { path: 'toast', component: ToastDocComponent },
       // { path: 'nav', component: NavPageComponent },
       // { path: 'forms', component: FormsComponent },
-      // { path: 'toast', component: ToastDocComponent },
       // { path: 'sidebar',  component: SidebarDocComponent},
       // { path: 'dropdown',  component: DropDownDocComponent},
       // { path: 'acordeon',  component: AcordeonDocComponent},

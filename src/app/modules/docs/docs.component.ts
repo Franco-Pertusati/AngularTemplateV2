@@ -33,13 +33,13 @@ export class DocsComponent {
         },
         {
           icon: '',
-          label: 'Marquee',
-          route: ''
+          label: 'Toast',
+          route: 'toast'
         },
         {
           icon: '',
-          label: 'Toast',
-          route: 'wasd'
+          label: 'Marquee',
+          route: ''
         },
         {
           icon: '',

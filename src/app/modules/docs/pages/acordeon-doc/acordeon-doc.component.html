@@ -1,29 +1,21 @@
-<div class="docPageContainer hfull wfull flex flexCol gap12">
-  <div>
-    <h2>Accordion Group</h2>
-    <p>Una lista de acordeones en la que solo un acordeon puede estar abierto a la vez</p>
-  </div>
-  <div class="componentPreview center">
-    <div class="flex flexCol gap12">
-      <app-acordeon [icon]="'info'" [label]="'Example Accordion'">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quam, rerum modi dolore neque ducimus
-          aspernatur
-          odio rem, expedita pariatur tempora molestiae eius animi vero quo eveniet, a possimus voluptatibus?</p>
-      </app-acordeon>
-      <app-acordeon [icon]="'info'" [label]="'Example Accordion'">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quam, rerum modi dolore neque ducimus
-          aspernatur
-          odio rem, expedita pariatur tempora molestiae eius animi vero quo eveniet, a possimus voluptatibus?</p>
-      </app-acordeon>
-      <app-acordeon [icon]="'info'" [label]="'Example Accordion'">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quam, rerum modi dolore neque ducimus
-          aspernatur
-          odio rem, expedita pariatur tempora molestiae eius animi vero quo eveniet, a possimus voluptatibus?</p>
-      </app-acordeon>
+<div class="docPageContainer hfull wfull">
+  <section>
+    <div>
+      <h2>Accordion Group</h2>
+      <p>Una lista de acordeones en la que solo un acordeon puede estar abierto a la vez</p>
     </div>
-  </div>
-  <h2>Inputs</h2>
-  <app-input-table />
-  <h2>Usage</h2>
-  <app-terminal-info />
+    <div class="componentPreview center">
+      <div class="flex flexCol gap12">
+        <app-accordion-group />
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>Inputs</h2>
+    <app-input-table [tableData]="inputTable" />
+  </section>
+  <section>
+    <h2>Usage</h2>
+    <app-terminal-info />
+  </section>
 </div>
