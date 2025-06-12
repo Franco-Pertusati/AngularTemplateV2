@@ -1,6 +1,6 @@
 <div class="flex flexCol gap12">
   @for (a of group; track $index) {
-  <app-acordeon [icon]="a.icon" [label]="a.label" (toggleAccordion)="closeOthers($index)">
+  <app-acordeon [icon]="a.icon" [label]="a.label" [isOpen]="a.isOpen" (toggleAccordion)="closeOthers($index)">
     <p>{{ a.content }}</p>
   </app-acordeon>
   }

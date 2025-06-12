@@ -1,15 +1,21 @@
 <div class="toastContainer">
+  <div class="toastBallsList gap12 flex gap8">
+    @for (t of toastList(); track $index) {
+    <div class="bg3 cardShadow"></div>
+    }
+  </div>
   @for (toast of toastList(); track $index) {
-  <div class="toast bg p12 flex gap12 aligncenter shadowMd" [ngClass]="$index === 0? '' : 'noShadow'">
+  <div class="bg toast gap12 p12 aligncenter cardShadow" [ngClass]="{ 'fade-out': toast.fading }">
     @if (toast.icon) {
-      <i class="material-icons-round">{{ toast.icon }}</i>
+    <i class="material-icons-round">{{ toast.icon }}</i>
     }
     <div class="flex flexCol">
       @if (toast.title) {
-        <span class="fstrong">{{ toast.title }}</span>
+      <span class="fstrong">{{ toast.title }}</span>
       }
       <span>{{ toast.message }}</span>
     </div>
   </div>
   }
+
 </div>
