@@ -24,7 +24,7 @@ export class DocsComponent {
       ]
     },
     {
-      name: 'Components',
+      name: 'Basic Components',
       buttons: [
         {
           icon: '',
@@ -46,10 +46,15 @@ export class DocsComponent {
           label: 'Scroll Porgress',
           route: 'wasd'
         },
+      ]
+    },
+    {
+      name: 'Buttons Components',
+      buttons: [
         {
           icon: '',
           label: 'Copy Button',
-          route: 'wasd'
+          route: 'copy-button'
         },
         {
           icon: '',
@@ -62,6 +67,6 @@ export class DocsComponent {
           route: 'wasd'
         },
       ]
-    },
+    }
   ]
 }
