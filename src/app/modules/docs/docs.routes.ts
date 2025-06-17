@@ -2,7 +2,7 @@ import { Routes } from "@angular/router";
 import { DocsComponent } from "./docs.component";
 import { AcordeonDocComponent } from "./pages/acordeon-doc/acordeon-doc.component";
 import { ToastDocComponent } from "./pages/toast-doc/toast-doc.component";
-import { CopyButtonComponent } from "./pages/copy-button/copy-button.component";
+import { CopybtnDocComponent } from "./pages/copybtn-doc/copybtn-doc.component";
 
 export const docsRoutes: Routes = [
   {
@@ -11,7 +11,7 @@ export const docsRoutes: Routes = [
     children: [
       { path: 'accordion-group', component: AcordeonDocComponent },
       { path: 'toast', component: ToastDocComponent },
-      { path: 'copy-button', component: CopyButtonComponent },
+      { path: 'copy-button', component: CopybtnDocComponent },
       // { path: 'forms', component: FormsComponent },
       // { path: 'sidebar',  component: SidebarDocComponent},
       // { path: 'dropdown',  component: DropDownDocComponent},
