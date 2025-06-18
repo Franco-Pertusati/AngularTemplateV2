@@ -59,7 +59,7 @@ export class DocsComponent {
         {
           icon: '',
           label: 'Promise Button',
-          route: 'wasd'
+          route: 'promise-button'
         },
         {
           icon: '',
