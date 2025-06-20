@@ -6,7 +6,9 @@
       consequatur dolorem totam magnam quisquam aliquid ipsam nobis voluptatem, deserunt a sint quae qui quasi vitae.
     </p>
     <div class="componentPreview center">
-      <app-promise-btn />
+      <div class="center">
+        <app-promise-btn [style]="'ghost'" [isLoading]="isLoading" (click)="testButton()" />
+      </div>
     </div>
   </section>
   <section>

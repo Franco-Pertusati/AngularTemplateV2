@@ -10,10 +10,11 @@ import { Component, Input } from '@angular/core';
 })
 export class PromiseBtnComponent {
   @Input() type: 'button' | 'submit' | 'reset' = 'button';
-  @Input() label: string = 'Action';
+  @Input() label: string = 'Confirm';
   @Input() showLabel: boolean = true;
   @Input() icon: string = 'check'
   @Input() showIcon: boolean = true;
-  @Input() notifications: number = 0;
   @Input() style: string = '';
+  @Input() isLoading: boolean = false;
+  @Input() finalMessage: string = 'Confirmed';
 }

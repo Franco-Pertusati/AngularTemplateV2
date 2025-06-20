@@ -11,5 +11,12 @@ import { PromiseBtnComponent } from "../../../shared/promise-btn/promise-btn.com
   styleUrl: './promise-btn-doc.component.css'
 })
 export class PromiseBtnDocComponent {
+  isLoading: boolean = false;
 
+  testButton() {
+    this.isLoading = true;
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 2500);
+  }
 }
