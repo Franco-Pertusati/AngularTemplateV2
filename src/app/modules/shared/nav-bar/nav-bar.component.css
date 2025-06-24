@@ -51,13 +51,11 @@ hr {
 
 .desktopNav nav {
   margin: 0 auto;
-  padding: 8px;
-  width: calc(100% - 24px);
-  max-width: 620px;
-  justify-content: space-between;
+  max-width: 1524px;
   flex-direction: row;
   border-radius: 99px;
   transition: all ease .3s;
+  padding: 6px 24px;
 }
 
 .desktopNav nav hr {
