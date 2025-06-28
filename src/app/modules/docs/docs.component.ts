@@ -66,6 +66,11 @@ export class DocsComponent {
           label: 'CTA Button',
           route: 'wasd'
         },
+        {
+          icon: '',
+          label: 'Toggle visibility',
+          route: 'toggle-visibility'
+        },
       ]
     }
   ]
