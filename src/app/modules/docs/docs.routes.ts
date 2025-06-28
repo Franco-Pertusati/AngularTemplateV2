@@ -4,7 +4,7 @@ import { AcordeonDocComponent } from "./pages/acordeon-doc/acordeon-doc.componen
 import { ToastDocComponent } from "./pages/toast-doc/toast-doc.component";
 import { CopybtnDocComponent } from "./pages/copybtn-doc/copybtn-doc.component";
 import { PromiseBtnDocComponent } from "./pages/promise-btn-doc/promise-btn-doc.component";
-import { ToggleVisibilityComponent } from "./pages/toggle-visibility/toggle-visibility.component";
+import { ToggleVisibilityDocComponent } from "./pages/toggle-visibility-doc/toggle-visibility-doc.component";
 
 export const docsRoutes: Routes = [
   {
@@ -15,7 +15,7 @@ export const docsRoutes: Routes = [
       { path: 'toast', component: ToastDocComponent },
       { path: 'copy-button', component: CopybtnDocComponent },
       { path: 'promise-button', component: PromiseBtnDocComponent },
-      { path: 'toggle-visibility', component: ToggleVisibilityComponent },
+      { path: 'toggle-visibility', component: ToggleVisibilityDocComponent },
       // { path: 'dropdown',  component: DropDownDocComponent},
       // { path: 'acordeon',  component: AcordeonDocComponent},
       // { path: 'feature-card',  component: FeatureCardDocComponent},
